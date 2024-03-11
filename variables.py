@@ -7,3 +7,8 @@ print (full_name)
 print(type(first_name))
 
 #Integrer Data type
+
+age = 21
+age += 1
+print(age)
+print(type(age))
