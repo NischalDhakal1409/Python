@@ -1,8 +1,8 @@
 #Types of Variables
 
 #String data types
-first_name = "Nischal"
-last_name = "Dhakal"
+first_name = "John"
+last_name = "Smith"
 full_name = first_name + " " + last_name
 print (full_name)
 print(type(first_name))
@@ -21,7 +21,7 @@ print(type(height))
 print("Your height is : " + str(height))
 
 #Boolean Data Type
-panda = True
-print(panda)
-print(type(panda))
-print("Is it an animal? : " + str(panda))
+ans = True
+print(ans)
+print(type(ans))
+print("Answer is " + str(ans))

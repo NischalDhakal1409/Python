@@ -1,4 +1,4 @@
-name = "Nischal"
+name = "Smith"
 
 #print(len(name))
 #print(name.find("i"))
@@ -9,4 +9,3 @@ name = "Nischal"
 #print(name.isalpha())
 #print(name.count("i"))
 #print(name.replace("i","z"))
-#print(name*3)
