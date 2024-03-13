@@ -1,11 +1,9 @@
 import math
-
 x = -2
 pi = 3.14
 a=3
 b=4
 c=1
-
 print(round(pi))
 print(math.ceil(pi))
 print(math.floor(pi))
