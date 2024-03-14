@@ -35,8 +35,9 @@ print(name)
 print(age)
 print(height)
 ```
+### Types of Variables
 Variables are of two type based on the place where they are defined. They are
-1. Global Variable
+### 1. Global Variable
    
 Variables that are created outside of a function (as in all of the examples above) are known as global variables. Global variables can be used by everyone, both inside of functions and outside.
 ```
@@ -56,7 +57,7 @@ def myfunc():
 myfunc()
 print("Python is " + x)
 ```
-2. Local Variable
+### 2. Local Variable
    
 Local variables in Python are those which are initialized inside a function and belong only to that particular function. It cannot be accessed anywhere outside the function.
 ```
@@ -101,20 +102,58 @@ random = """Lorem ipsum dolor sit amet,
         ut labore et dolore magna aliqua."""
 print(random)
 ```
+### String Slicing
+String Slicing is the method of creating a substring by extracting elements from the other string. We can create it by two methods i.e. index[] or slice()
+### Use of Index[]
+We can create a substring by extracting the elements from other string using index[]. We need to specify the start index and end index, separated by a colon, to return a part of the string. We can also specify steps to skip and extract substring following that steps.
+The general format for indexing is [start:end:step]
+```
+name = "John Smith"
+first_name = name[0:5]                  
+last_name = name[5:11]                  
+random_name = name[0:11:2]
+print(first_name)
+print(last_name)
+print(random_name)
+```
+### Use of slice()
+We can return a range of characters by using the slice syntax.We need to the start index and the end index, separated by a colon, to return a part of the string.
+```
+website = "https://www.google.com"
+slice = slice(12,-4)
+print(website[slice])
+```
+### Escape Characters
+Escape character is the backslash followed by the character that causes escape from the normal interpretation of a string. There are different escape characters used in Python. Some of them are given below.
+For example:
+```
+print("He is so called "rich" son of a college")
+```
+If we run the above code in python, python returns error as we have used multiple quotes inside a string. To fix this problem, we can use escape character.
+```
+print(" He is so called \"rich"\ son of a college")
+```
+| Code | Result |
+| ------------- | ------------- |
+| \' | Single Quote |
+| \n | New line |
+| \\ | backslash |
+| \t | tab |
+
 ### String Methods
 Python has a set of built in methods that we can use on strings.
 
-| Method        | Description |
+| Method | Description |
 | ------------- | ------------- |
-| len()  | helps to find the length of string |
-| find()  | helps to find the specified alphabet in the string  |
+| len() | find the length of string |
+| find() | find the specified alphabet in the string |
 | capitalize()  | converts the first charatcer to capital |
-| upper()  | converts the string into uppercase  |
-| lower()  | converts the string into lowecase  |
-| isalpha()  | returns True if all characters in the string are in the alphabet  |
-| isalnum()  | returns True if all characters in the string are in the alphanumeric  |
-| count()  | ounts and displays how many times is the specified alphabet is used in string.  |
-| replace()  | replaces the target alphabet with the another alphabet in the string  |
+| upper() | converts the string into uppercase |
+| lower() | converts the string into lowecase |
+| isalpha() | returns True if all characters in the string are in the alphabet |
+| isalnum() | returns True if all characters in the string are in the alphanumeric |
+| count() | counts and displays how many times is the specified alphabet is used in string. |
+| replace() | replaces the target alphabet with the another alphabet in the string |
 
 Below is the example demonstrating the use of all above string methods.
 ```
@@ -132,34 +171,79 @@ print(name.replace("i","z"))
 ```
 
 ## Numbers
-In Python, Basically we have 4 different types of data types. They are:
-  2. Integer
+### Types of Numeric Data Types
+In Python, Basically we have 3 different types of numeric data types. They are:
+ ### 1. Integer
 
 Integer are the whole number, negative or positive without a decimal. To assign a variable with integer, we can write a variable name followed by equals to sign and integer.
 ```
-age = 20
-print(age)
+a = 21
+b = -10
+print(a)
+print(b)
 ```
-We can combine integer and string in python by converting the integer in string form as shown below.
-```
-age = 21
-print("Your age is: " + str(age))
-```
-
-  3.Float
-  
+  ### 2. Float
 Float, "Floating Point Number" is a number, positive or negative, containing one or more decimals. To assign a variable with float, we can write a variable name followed by equals to sign and float. 
 ```
-height = 55.6
-print(height)
+x = 55.6
+y = -20.3
+print(x)
+print(y)
 ```
-We can combine float and string in python by converting the float in string form as shown below.
+### 3. Complex
+Complex numbers are written with a "j" as the imaginary part.
 ```
-height = 55.6
-print("Your height is : " + str(height))
+c = 5j
+d = 3+2j
+print(c)
+print(d)
+```
+## Math in Python
+In Python, we have built-in math functions, including math module that allows us to perform mathematical tasks on numbers. 
+
+### Built-in Math functions
+There are different built-in math functions to perform mathematical operations.
+| Functions | Use |
+| ------------- | ------------- |
+| round() | It rounds the number to the nearest value |
+| pow(x,y) | returns the value of x to the power of y (xy) |
+| max() | used to find the highest value in an iterable |
+| min() | used to find the lowest value in an iterable |
+```
+a=3
+b=4
+c=1
+x=-2
+print(abs(x))
+print(pow(x,2))
+print(max(a,b,c))
+print(min(a,b,c))
+```
+### Built-in Math Module
+Python has also a built-in module called math, which extends the list of mathematical functions.
+To use it, you must import the math module:
+```
+import math
+```
+After importing math module, we can use different methods to perform mathematical calculations in python.
+
+| Module | Description |
+| ------------- | ------------- |
+| sqrt() | finds the square roof of a number |
+| ceil() | rounds a number upwards to its nearest integer |
+| floor() | rounds a number downwards to its nearest integer |
+
+```
+import math
+pi = 3.14
+print(math.ceil(pi))
+print(math.floor(pi))
+print(math.sqrt(5))
 ```
 
-
+## If-else
+## While loop
+## For Loop
 
 
 
