@@ -162,7 +162,40 @@ d = 3+2j
 print(c)
 print(d)
 ```
+## Math in Python
+In Python, we have built-in math functions, including math module that allows us to perform mathematical tasks on numbers. There are different types of functions. Some are given below.
+| Functions | Use |
+| ------------- | ------------- |
+| round() | str |
+| ceil() | int, float, complex |
+| floor() | list, tuple, range |
+| abs | dict |
+| Set | set, frozenset |
+| Boolean | bool |
+| Binary | bytes, bytearray, memoryview |
+| None | NoneType |
 
+```
+import math
+x = -2
+pi = 3.14
+a=3
+b=4
+c=1
+print(round(pi))
+print(math.ceil(pi))
+print(math.floor(pi))
+print(abs(x))
+print(pow(x,2))
+print(math.sqrt(5))
+print(max(a,b,c))
+print(min(a,b,c))
+
+```
+
+## If-else
+## While loop
+## For Loop
 
 
 
