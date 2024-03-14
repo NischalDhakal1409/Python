@@ -104,7 +104,7 @@ print(random)
 ```
 ### String Slicing
 String Slicing is the method of creating a substring by extracting elements from the other string. We can create it by two methods i.e. index[] or slice()
-### Use of Index[]
+### Use of index[]
 We can create a substring by extracting the elements from other string using index[]. We need to specify the start index and end index, separated by a colon, to return a part of the string. We can also specify steps to skip and extract substring following that steps.
 The general format for indexing is [start:end:step]
 ```
@@ -131,7 +131,7 @@ print("He is so called "rich" son of a college")
 ```
 If we run the above code in python, python returns error as we have used multiple quotes inside a string. To fix this problem, we can use escape character.
 ```
-print(" He is so called \"rich"\ son of a college")
+print(" He is so called \"rich\" son of a college")
 ```
 | Code | Result |
 | ------------- | ------------- |
@@ -140,6 +140,13 @@ print(" He is so called \"rich"\ son of a college")
 | \\ | backslash |
 | \t | tab |
 
+### Use of escape characters
+```
+print("He is \'special\'")
+print("He\\she ")
+print("Rayne\t is a student")
+print("He is a guy.\nHe is from Kathmandu")
+```
 ### String Methods
 Python has a set of built in methods that we can use on strings.
 
@@ -198,6 +205,54 @@ d = 3+2j
 print(c)
 print(d)
 ```
+## Boolean in Python
+```
+print(10>2)
+```
+
+```
+a = 10
+b = 20
+
+if b>a:
+    print("b is greater than a")
+```
+```
+x = "Hi"
+print(bool(x))
+
+y = 0
+print(bool(y))
+```
+## Lists in Python
+## Tuples in Python
+## Set in Python
+## Dictionaries in Python
+## If-else
+```
+if b > a:
+   print("b is greater than a")
+```
+```
+if b > a:
+   print("b is greater than a")
+elif b == a:
+   print("They both are equal")
+```
+```
+a=200
+b=20
+
+if b > a:
+   print("b is greater than a")
+elif b == a:
+   print("They both are equal")
+else:
+   print("a is greater than b")
+```
+## While loop
+## For Loop
+
 ## Math in Python
 In Python, we have built-in math functions, including math module that allows us to perform mathematical tasks on numbers. 
 
@@ -241,9 +296,6 @@ print(math.floor(pi))
 print(math.sqrt(5))
 ```
 
-## If-else
-## While loop
-## For Loop
 
 
 
