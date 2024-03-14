@@ -116,7 +116,6 @@ print(first_name)
 print(last_name)
 print(random_name)
 ```
-
 ### Use of slice()
 We can return a range of characters by using the slice syntax.We need to the start index and the end index, separated by a colon, to return a part of the string.
 ```
@@ -125,6 +124,21 @@ slice = slice(12,-4)
 print(website[slice])
 ```
 ### Escape Characters
+Escape character is the backslash followed by the character that causes escape from the normal interpretation of a string. There are different escape characters used in Python. Some of them are given below.
+For example:
+```
+print("He is so called "rich" son of a college")
+```
+If we run the above code in python, python returns error as we have used multiple quotes inside a string. To fix this problem, we can use escape character.
+```
+print(" He is so called \"rich"\ son of a college")
+```
+| Code | Result |
+| ------------- | ------------- |
+| \' | Single Quote |
+| \n | New line |
+| \\ | backslash |
+| \t | tab |
 
 ### String Methods
 Python has a set of built in methods that we can use on strings.
