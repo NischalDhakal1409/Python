@@ -14,13 +14,13 @@ Below is the simple example of python programming.
 ```
 print ("Hello World!")
 ```
-## Comments
+## Comments in Python
 Comments is used to explain what the code is about. It makes the code more readable. It can be done by using #.
 ```
 #This is comment
 print("Checking Comment")
 ```
-## Variables
+## Variables in Python
 Variables are the containers that hold a value or data. It is essential for storing and manipulating data in programming. In python, a variable is created the moment you first assign a value to it.
 ```
 a = "Smith"
@@ -177,7 +177,7 @@ print(name.count("i"))
 print(name.replace("i","z"))
 ```
 
-## Numbers
+## Numbers in Python
 ### Types of Numeric Data Types
 In Python, Basically we have 3 different types of numeric data types. They are:
  ### 1. Integer
@@ -205,26 +205,69 @@ d = 3+2j
 print(c)
 print(d)
 ```
-## Boolean in Python
+## Boolean in Python 
+Boolean represents one of the two values i.e True or False
+While programming , there may arise a situation where we have to know if expression is true or false. When we compare two values, python evaluates and sends the boolean value.
 ```
 print(10>2)
 ```
-
-```
-a = 10
-b = 20
-
-if b>a:
-    print("b is greater than a")
-```
+In the above code, python analyze the expression and returns the true value.
+### bool() function
+The bool() function allows you to evaluate any value, and give you True or False in return.
+Generally, any value is True if it is not empty strings, 0 or empty sets,tuples or dictionary.
 ```
 x = "Hi"
 print(bool(x))
-
+```
+However, if the values evaluates to empty values, such as (), [], {}, "", the number 0, and the value None, then the python returns False.
+```
 y = 0
 print(bool(y))
 ```
 ## Lists in Python
+List are the data types that allows us to store multiple items in a single variable. Lists are created using  big brackets i.e [] .
+```
+name = ["Kevin", "Smith", "Shawn"]
+print(name)
+```
+### Features of Lists
+1. List are ordered. It means that items in a list have a definite order. Whenever a new item is added to the list, it is added at last.
+2. Lists are changeable. It means that the items in a list can be removed after being created. Also the new item can be added.
+3. Lists allows duplicate. Since, lists are indexed, so lists can have items with the same value. For example:
+```
+lang = ["Eng", "French", "Japanese", "Eng", "French"]
+print(lang)
+```
+4. Lists items can be of any data types. They can be of same data types or different data types.
+```
+numlist = [1,2,3,4]
+randomlist = [ "xyz", True, 22.5, 40 ]
+print(numlist)
+print(randomlist)
+```
+### Accessing List items
+Since lists are indexed, we can access them by referring to index number. The first item has index 0.
+```
+lang = ["Python","C","Java"]
+print(lang[1])
+```
+We can also index by using negative index. The last item has index -1 and second item has index -2.
+```
+num = [1,3,5,2,3]
+print(num[-2])
+```
+We can also specify range of index to say where to start and where to end. However, the start index is included but end index is not inclued.
+```
+random = ["a","c","q","r","i","p","g"]
+print(random[2:5])
+```
+### Checking list items
+We can also check if specified item is present in list or not by using 'in' keyword.
+```
+fruits = ["mango", "apple", "grapes"]
+if "apple" in fruits:
+  print("Yes, 'apple' is in the fruits list")
+```
 ## Tuples in Python
 ## Set in Python
 ## Dictionaries in Python
