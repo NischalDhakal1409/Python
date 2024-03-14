@@ -1,14 +1,19 @@
 #Types of Numbers in Python
 
 #Integrer 
-age = 21
-age += 1
-print(age)
-print(type(age))
-print("Your age is: " + str(age))
+a = 21
+b = -10
+print(a)
+print(b)
 
 #Float
-height = 55.6
-print(height)
-print(type(height))
-print("Your height is : " + str(height))
+x = 55.6
+y = -20.3
+print(x)
+print(y)
+
+#Complex
+c = 5j
+d = 3+2j
+print(c)
+print(d)
