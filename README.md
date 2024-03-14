@@ -37,7 +37,7 @@ print(height)
 ```
 ### Types of Variables
 Variables are of two type based on the place where they are defined. They are
-#### 1. Global Variable
+### 1. Global Variable
    
 Variables that are created outside of a function (as in all of the examples above) are known as global variables. Global variables can be used by everyone, both inside of functions and outside.
 ```
@@ -57,7 +57,7 @@ def myfunc():
 myfunc()
 print("Python is " + x)
 ```
-#### 2. Local Variable
+### 2. Local Variable
    
 Local variables in Python are those which are initialized inside a function and belong only to that particular function. It cannot be accessed anywhere outside the function.
 ```
@@ -103,21 +103,43 @@ random = """Lorem ipsum dolor sit amet,
 print(random)
 ```
 ### String Slicing
+String Slicing is the method of creating a substring by extracting elements from the other string. We can create it by two methods i.e. index[] or slice()
+### Use of Index[]
+We can create a substring by extracting the elements from other string using index[]. We need to specify the start index and end index, separated by a colon, to return a part of the string. We can also specify steps to skip and extract substring following that steps.
+The general format for indexing is [start:end:step]
+```
+name = "John Smith"
+first_name = name[0:5]                  
+last_name = name[5:11]                  
+random_name = name[0:11:2]
+print(first_name)
+print(last_name)
+print(random_name)
+```
+
+### Use of slice()
+We can return a range of characters by using the slice syntax.We need to the start index and the end index, separated by a colon, to return a part of the string.
+```
+website = "https://www.google.com"
+slice = slice(12,-4)
+print(website[slice])
+```
 ### Escape Characters
+
 ### String Methods
 Python has a set of built in methods that we can use on strings.
 
-| Method        | Description |
+| Method | Description |
 | ------------- | ------------- |
-| len()  | helps to find the length of string |
-| find()  | helps to find the specified alphabet in the string  |
+| len() | find the length of string |
+| find() | find the specified alphabet in the string |
 | capitalize()  | converts the first charatcer to capital |
-| upper()  | converts the string into uppercase  |
-| lower()  | converts the string into lowecase  |
-| isalpha()  | returns True if all characters in the string are in the alphabet  |
-| isalnum()  | returns True if all characters in the string are in the alphanumeric  |
-| count()  | ounts and displays how many times is the specified alphabet is used in string.  |
-| replace()  | replaces the target alphabet with the another alphabet in the string  |
+| upper() | converts the string into uppercase |
+| lower() | converts the string into lowecase |
+| isalpha() | returns True if all characters in the string are in the alphabet |
+| isalnum() | returns True if all characters in the string are in the alphanumeric |
+| count() | counts and displays how many times is the specified alphabet is used in string. |
+| replace() | replaces the target alphabet with the another alphabet in the string |
 
 Below is the example demonstrating the use of all above string methods.
 ```
@@ -137,7 +159,7 @@ print(name.replace("i","z"))
 ## Numbers
 ### Types of Numeric Data Types
 In Python, Basically we have 3 different types of numeric data types. They are:
- #### 1. Integer
+ ### 1. Integer
 
 Integer are the whole number, negative or positive without a decimal. To assign a variable with integer, we can write a variable name followed by equals to sign and integer.
 ```
@@ -146,7 +168,7 @@ b = -10
 print(a)
 print(b)
 ```
-  #### 2. Float
+  ### 2. Float
 Float, "Floating Point Number" is a number, positive or negative, containing one or more decimals. To assign a variable with float, we can write a variable name followed by equals to sign and float. 
 ```
 x = 55.6
@@ -154,7 +176,7 @@ y = -20.3
 print(x)
 print(y)
 ```
-#### 3. Complex
+### 3. Complex
 Complex numbers are written with a "j" as the imaginary part.
 ```
 c = 5j
