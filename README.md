@@ -244,7 +244,30 @@ numlist = [1,2,3,4]
 randomlist = [ "xyz", True, 22.5, 40 ]
 print(numlist)
 print(randomlist)
-```   
+```
+### Accessing List items
+Since lists are indexed, we can access them by referring to index number. The first item has index 0.
+```
+lang = ["Python","C","Java"]
+print(lang[1])
+```
+We can also index by using negative index. The last item has index -1 and second item has index -2.
+```
+num = [1,3,5,2,3]
+print(num[-2])
+```
+We can also specify range of index to say where to start and where to end. However, the start index is included but end index is not inclued.
+```
+random = ["a","c","q","r","i","p","g"]
+print(random[2:5])
+```
+### Checking list items
+We can also check if specified item is present in list or not by using 'in' keyword.
+```
+fruits = ["mango", "apple", "grapes"]
+if "apple" in fruits:
+  print("Yes, 'apple' is in the fruits list")
+```
 ## Tuples in Python
 ## Set in Python
 ## Dictionaries in Python
