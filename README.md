@@ -163,17 +163,26 @@ print(c)
 print(d)
 ```
 ## Math in Python
-In Python, we have built-in math functions, including math module that allows us to perform mathematical tasks on numbers. There are different types of functions. Some are given below.
+In Python, we have built-in math functions, including math module that allows us to perform mathematical tasks on numbers. 
+
+### Built-in Math functions
 | Functions | Use |
 | ------------- | ------------- |
-| round() | str |
-| ceil() | int, float, complex |
-| floor() | list, tuple, range |
-| abs | dict |
-| Set | set, frozenset |
-| Boolean | bool |
-| Binary | bytes, bytearray, memoryview |
-| None | NoneType |
+| round() | It rounds the number to the nearest value |
+
+| pow() | dict |
+| sqrt() | set, frozenset |
+| max() | used to find the highest value in an iterable |
+| min() | used to find the lowest value in an iterable |
+
+### Built-in Math Module
+Python has also a built-in module called math, which extends the list of mathematical functions.
+To use it, you must import the math module:
+
+| Module | Description |
+| ------------- | ------------- |
+| ceil() | rounds a number upwards to its nearest integer |
+| floor() | rounds a number downwards to its nearest integer |
 
 ```
 import math
