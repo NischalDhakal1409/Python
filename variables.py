@@ -1,27 +1,35 @@
-#Types of Variables
+#Defining variable
+a = "Smith"
+b = 20
+print(a)
+print(b)
 
-#String data types
-first_name = "John"
-last_name = "Smith"
-full_name = first_name + " " + last_name
-print (full_name)
-print(type(first_name))
+#Assigning multiple variables in single line
+name, age, height = "Kevin", 21, 5
 
-#Integrer Data type
-age = 21
-age += 1
+print(name)
 print(age)
-print(type(age))
-print("Your age is: " + str(age))
-
-#Float Data Types
-height = 55.6
 print(height)
-print(type(height))
-print("Your height is : " + str(height))
 
-#Boolean Data Type
-ans = True
-print(ans)
-print(type(ans))
-print("Answer is " + str(ans))
+#Global Variable
+x = "programming language."
+
+def myfunc():
+  print("Python is " + x)
+
+myfunc()
+
+#Global Keyword
+def myfunc():
+  global x
+  x = "high level programming language"
+
+myfunc()
+print("Python is " + x)
+
+#Local Variable   
+def f():
+    s = "I love python"
+    print(s)
+
+f()
