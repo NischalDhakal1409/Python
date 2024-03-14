@@ -166,40 +166,43 @@ print(d)
 In Python, we have built-in math functions, including math module that allows us to perform mathematical tasks on numbers. 
 
 ### Built-in Math functions
+There are different built-in math functions to perform mathematical operations.
 | Functions | Use |
 | ------------- | ------------- |
 | round() | It rounds the number to the nearest value |
-
-| pow() | dict |
-| sqrt() | set, frozenset |
+| pow(x,y) | returns the value of x to the power of y (xy) |
 | max() | used to find the highest value in an iterable |
 | min() | used to find the lowest value in an iterable |
-
+```
+a=3
+b=4
+c=1
+x=-2
+print(abs(x))
+print(pow(x,2))
+print(max(a,b,c))
+print(min(a,b,c))
+```
 ### Built-in Math Module
 Python has also a built-in module called math, which extends the list of mathematical functions.
 To use it, you must import the math module:
+```
+import math
+```
+After importing math module, we can use different methods to perform mathematical calculations in python.
 
 | Module | Description |
 | ------------- | ------------- |
+| sqrt() | finds the square roof of a number |
 | ceil() | rounds a number upwards to its nearest integer |
 | floor() | rounds a number downwards to its nearest integer |
 
 ```
 import math
-x = -2
 pi = 3.14
-a=3
-b=4
-c=1
-print(round(pi))
 print(math.ceil(pi))
 print(math.floor(pi))
-print(abs(x))
-print(pow(x,2))
 print(math.sqrt(5))
-print(max(a,b,c))
-print(min(a,b,c))
-
 ```
 
 ## If-else
