@@ -35,8 +35,9 @@ print(name)
 print(age)
 print(height)
 ```
+### Types of Variables
 Variables are of two type based on the place where they are defined. They are
-1. Global Variable
+#### 1. Global Variable
    
 Variables that are created outside of a function (as in all of the examples above) are known as global variables. Global variables can be used by everyone, both inside of functions and outside.
 ```
@@ -56,7 +57,7 @@ def myfunc():
 myfunc()
 print("Python is " + x)
 ```
-2. Local Variable
+#### 2. Local Variable
    
 Local variables in Python are those which are initialized inside a function and belong only to that particular function. It cannot be accessed anywhere outside the function.
 ```
@@ -101,6 +102,8 @@ random = """Lorem ipsum dolor sit amet,
         ut labore et dolore magna aliqua."""
 print(random)
 ```
+### String Slicing
+### Escape Characters
 ### String Methods
 Python has a set of built in methods that we can use on strings.
 
@@ -132,33 +135,33 @@ print(name.replace("i","z"))
 ```
 
 ## Numbers
-In Python, Basically we have 4 different types of data types. They are:
-  2. Integer
+### Types of Numeric Data Types
+In Python, Basically we have 3 different types of numeric data types. They are:
+ #### 1. Integer
 
 Integer are the whole number, negative or positive without a decimal. To assign a variable with integer, we can write a variable name followed by equals to sign and integer.
 ```
-age = 20
-print(age)
+a = 21
+b = -10
+print(a)
+print(b)
 ```
-We can combine integer and string in python by converting the integer in string form as shown below.
-```
-age = 21
-print("Your age is: " + str(age))
-```
-
-  3.Float
-  
+  #### 2. Float
 Float, "Floating Point Number" is a number, positive or negative, containing one or more decimals. To assign a variable with float, we can write a variable name followed by equals to sign and float. 
 ```
-height = 55.6
-print(height)
+x = 55.6
+y = -20.3
+print(x)
+print(y)
 ```
-We can combine float and string in python by converting the float in string form as shown below.
+#### 3. Complex
+Complex numbers are written with a "j" as the imaginary part.
 ```
-height = 55.6
-print("Your height is : " + str(height))
+c = 5j
+d = 3+2j
+print(c)
+print(d)
 ```
-
 
 
 
