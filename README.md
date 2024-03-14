@@ -14,6 +14,58 @@ Below is the simple example of python programming.
 ```
 print ("Hello World!")
 ```
+## Comments
+Comments is used to explain what the code is about. It makes the code more readable. It can be done by using #.
+```
+#This is comment
+print("Checking Comment")
+```
+## Variables
+Variables are the containers that hold a value or data. It is essential for storing and manipulating data in programming. In python, a variable is created the moment you first assign a value to it.
+```
+a = "Smith"
+b = 20
+print(a)
+print(b)
+```
+We can assign multiple variables in a single line of code thus reducing the code length and making it efficient.
+```
+name, age, height = "Kevin", 21, 5
+print(name)
+print(age)
+print(height)
+```
+Variables are of two type based on the place where they are defined. They are
+1. Global Variable
+   
+Variables that are created outside of a function (as in all of the examples above) are known as global variables. Global variables can be used by everyone, both inside of functions and outside.
+```
+x = "programming language."
+
+def myfunc():
+  print("Python is " + x)
+
+myfunc()
+```
+Global variable can also be created inside a function by using global keyword.
+```
+def myfunc():
+  global x
+  x = "high level programming language"
+
+myfunc()
+print("Python is " + x)
+```
+2. Local Variable
+   
+Local variables in Python are those which are initialized inside a function and belong only to that particular function. It cannot be accessed anywhere outside the function.
+```
+def f():
+    s = "I love python"
+    print(s)
+
+f()
+```
 ## Data Types in Python
 In Python, Basically we have 4 different types of data types. They are:
   1. String
@@ -78,13 +130,7 @@ print(type(name))
 print(type(height))
 ```
 ## Multiple Assignment 
-This features allows us to assign mutliple variables at the same time in one line of code thus reducing the code length and making it efficient.
-```
-name, age, height = "Hari", 21, 5.5
-print(name)
-print(age)
-print(height)
-```
+This features allows us to assign mutliple variables at the same time in one line of code 
 
 ## String Methods
 Python has a set of built in methods that we can use on strings.
