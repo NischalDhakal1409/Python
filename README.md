@@ -225,6 +225,26 @@ y = 0
 print(bool(y))
 ```
 ## Lists in Python
+List are the data types that allows us to store multiple items in a single variable. Lists are created using  big brackets i.e [] .
+```
+name = ["Kevin", "Smith", "Shawn"]
+print(name)
+```
+### Features of Lists
+1. List are ordered. It means that items in a list have a definite order. Whenever a new item is added to the list, it is added at last.
+2. Lists are changeable. It means that the items in a list can be removed after being created. Also the new item can be added.
+3. Lists allows duplicate. Since, lists are indexed, so lists can have items with the same value. For example:
+```
+lang = ["Eng", "French", "Japanese", "Eng", "French"]
+print(lang)
+```
+4. Lists items can be of any data types. They can be of same data types or different data types.
+```
+numlist = [1,2,3,4]
+randomlist = [ "xyz", True, 22.5, 40 ]
+print(numlist)
+print(randomlist)
+```   
 ## Tuples in Python
 ## Set in Python
 ## Dictionaries in Python
