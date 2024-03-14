@@ -14,13 +14,13 @@ Below is the simple example of python programming.
 ```
 print ("Hello World!")
 ```
-## Comments
+## Comments in Python
 Comments is used to explain what the code is about. It makes the code more readable. It can be done by using #.
 ```
 #This is comment
 print("Checking Comment")
 ```
-## Variables
+## Variables in Python
 Variables are the containers that hold a value or data. It is essential for storing and manipulating data in programming. In python, a variable is created the moment you first assign a value to it.
 ```
 a = "Smith"
@@ -177,7 +177,7 @@ print(name.count("i"))
 print(name.replace("i","z"))
 ```
 
-## Numbers
+## Numbers in Python
 ### Types of Numeric Data Types
 In Python, Basically we have 3 different types of numeric data types. They are:
  ### 1. Integer
@@ -205,22 +205,22 @@ d = 3+2j
 print(c)
 print(d)
 ```
-## Boolean in Python
+## Boolean in Python 
+Boolean represents one of the two values i.e True or False
+While programming , there may arise a situation where we have to know if expression is true or false. When we compare two values, python evaluates and sends the boolean value.
 ```
 print(10>2)
 ```
-
-```
-a = 10
-b = 20
-
-if b>a:
-    print("b is greater than a")
-```
+In the above code, python analyze the expression and returns the true value.
+### bool() function
+The bool() function allows you to evaluate any value, and give you True or False in return.
+Generally, any value is True if it is not empty strings, 0 or empty sets,tuples or dictionary.
 ```
 x = "Hi"
 print(bool(x))
-
+```
+However, if the values evaluates to empty values, such as (), [], {}, "", the number 0, and the value None, then the python returns False.
+```
 y = 0
 print(bool(y))
 ```
