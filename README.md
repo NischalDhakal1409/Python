@@ -67,72 +67,41 @@ def f():
 f()
 ```
 ## Data Types in Python
-In Python, Basically we have 4 different types of data types. They are:
-  1. String
-     
-  String in python are denoted in either single quotation marks or double quotation marks. To assign a variable with string, we can write a variable name followed by equals to sign and string written in    quotation.
-  ```
-name = "Ram"
+
+Python has different data types built-in by default in these categories
+| Types        | Categories |
+| ------------- | ------------- |
+| Text | str |
+| Numeric | int, float, complex |
+| Sequence | list, tuple, range |
+| Mapping | dict |
+| Set | set, frozenset |
+| Boolean | bool |
+| Binary | bytes, bytearray, memoryview |
+| None | NoneType |
+
+## Strings
+Strings in python are surrounded by either single quotation marks or double quotation marks.
+"Hello" is same as 'hello'
+```
+print("Hello World!")
+```
+### Assigning String to the variable
+We can also assign string to the variable. It is done done with the variable name followed by an equal sign and the string.
+```
+name = "Smith"
 print(name)
 ```
-
-  We can concat string in the python by using "+" symbol.
-  ```
-first_name = "John"
-last_name = "Smith"
-full_name = first_name + last_name
-print(last_name)
+### Multiline Strings
+We can assign multiline strings by using 3 quotes.
 ```
-
-  2. Integer
-
-Integer are the whole number, negative or positive without a decimal. To assign a variable with integer, we can write a variable name followed by equals to sign and integer.
+random = """Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua."""
+print(random)
 ```
-age = 20
-print(age)
-```
-We can combine integer and string in python by converting the integer in string form as shown below.
-```
-age = 21
-print("Your age is: " + str(age))
-```
-
-  3.Float
-  
-Float, "Floating Point Number" is a number, positive or negative, containing one or more decimals. To assign a variable with float, we can write a variable name followed by equals to sign and float. 
-```
-height = 55.6
-print(height)
-```
-We can combine float and string in python by converting the float in string form as shown below.
-```
-height = 55.6
-print("Your height is : " + str(height))
-```
-
-  4.Boolean
-
-Boolean represents either one of these values, true or false. It is often used to compare the two values. To assign a variable with boolean, we can write a variable name followed by equals to sign and boolean. 
-```
-ans = True
-print(ans)
-```
-We can combine boolean and string in python by converting the bolean in string form as shown below.
-```
-ans = True
-print("Your ans is " + str(panda))
-```
-To know the type of the variable, we can find by using the "type"
-```
-name = "Kevin"
-height = 55.5
-print(type(name))
-print(type(height))
-```
-## Multiple Assignment 
-This features allows us to assign mutliple variables at the same time in one line of code 
-
-## String Methods
+### String Methods
 Python has a set of built in methods that we can use on strings.
 
 | Method        | Description |
@@ -162,11 +131,33 @@ print(name.count("i"))
 print(name.replace("i","z"))
 ```
 
+## Numbers
+In Python, Basically we have 4 different types of data types. They are:
+  2. Integer
 
+Integer are the whole number, negative or positive without a decimal. To assign a variable with integer, we can write a variable name followed by equals to sign and integer.
+```
+age = 20
+print(age)
+```
+We can combine integer and string in python by converting the integer in string form as shown below.
+```
+age = 21
+print("Your age is: " + str(age))
+```
 
-
-
-
+  3.Float
+  
+Float, "Floating Point Number" is a number, positive or negative, containing one or more decimals. To assign a variable with float, we can write a variable name followed by equals to sign and float. 
+```
+height = 55.6
+print(height)
+```
+We can combine float and string in python by converting the float in string form as shown below.
+```
+height = 55.6
+print("Your height is : " + str(height))
+```
 
 
 
