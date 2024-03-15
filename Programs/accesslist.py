@@ -1,3 +1,5 @@
+#Managing List items
+
 #Accesing items from positive index
 lang = ["Python","C","Java"]
 print(lang[1])
@@ -14,3 +16,5 @@ print(random[2:5])
 fruits = ["mango", "apple", "grapes"]
 if "apple" in fruits:
   print("Yes, 'apple' is in the fruits list")
+
+  
