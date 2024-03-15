@@ -245,6 +245,8 @@ randomlist = [ "xyz", True, 22.5, 40 ]
 print(numlist)
 print(randomlist)
 ```
+### Managing List items
+The items in a list can be managed in different styles. We can access the list items, add or remove or change the list items.
 ### Accessing List items
 Since lists are indexed, we can access them by referring to index number. The first item has index 0.
 ```
@@ -267,6 +269,13 @@ We can also check if specified item is present in list or not by using 'in' keyw
 fruits = ["mango", "apple", "grapes"]
 if "apple" in fruits:
   print("Yes, 'apple' is in the fruits list")
+```
+### Changing list items
+We can also change the list items by refering to the index number.
+```
+alphabet = ["A", "D", "E"]
+alphabet[1] = "W"
+print(alphabet)
 ```
 ## Tuples in Python
 ## Set in Python
