@@ -298,6 +298,45 @@ position = ["First","Second","Third"]
 position.append("Last")
 print(position)
 ```
+### Extending list
+We can also add elements from another list to the current list by using extend() method.
+```
+programs = ["Word", "Excel", "Powerpoint"]
+software = ["Office", "VS-Code"]
+programs.extend(software)
+print(programs)
+```
+### Removing items from a list
+We can also remove the items from a list by using remove() method.
+```
+names = ["Ram", "Sita", "Hari", "Kevin", "Drogy", "Brogy", "Rayne"]
+names.remove("Ram")
+print(names)
+```
+In order to remove the specified index from a list, we can use pop() method.
+```
+name = ["Ram", "Sita", "Hari", "Kevin", "Drogy", "Brogy", "Rayne"]
+name.pop(1)
+print(name)
+```
+If the index is not specified then the last index of the list is removed by pop() method.
+```
+person = ["Ram", "Sita", "Hari", "Kevin", "Drogy", "Brogy", "Rayne"]
+person.pop()
+print(person)
+```
+If we want to remove the list completely, we can use del to remove completely.
+```
+primenumber = [1,3,5,7,13]
+del primenumber
+print(primenumber) #this will cause an error because we have successfully deleted the list.
+```
+We can also remove the items of a list by using clear() method. The list will still remain but the content will be empty.
+```
+texts = ["abc","bcd","def"]
+texts.clear()
+print(texts)
+```
 ## Tuples in Python
 ## Set in Python
 ## Dictionaries in Python
