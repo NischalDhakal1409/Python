@@ -17,4 +17,22 @@ fruits = ["mango", "apple", "grapes"]
 if "apple" in fruits:
   print("Yes, 'apple' is in the fruits list")
 
-  
+#Changing list items
+alphabet = ["A", "D", "E"]
+alphabet[1] = "W"
+print(alphabet)
+
+#Changing range of list items
+num = [1,2,4,6,7]
+num[0:3] = [9,0,10]
+print(num)
+
+#inserting an item in a list
+country = ["Nep","Ind","Pak"]
+country.insert(2,"US")
+print(country)
+
+#Append items
+position = ["First","Second","Third"]
+position.append("Last")
+print(position)
