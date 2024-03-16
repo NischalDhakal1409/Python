@@ -36,3 +36,35 @@ print(country)
 position = ["First","Second","Third"]
 position.append("Last")
 print(position)
+
+#extend list
+programs = ["Word", "Excel", "Powerpoint"]
+software = ["Office", "VS-Code"]
+programs.extend(software)
+print(programs)
+
+#Removing items from a list using remove method
+names = ["Ram", "Sita", "Hari", "Kevin", "Drogy", "Brogy", "Rayne"]
+names.remove("Ram")
+print(names)
+
+#Removing items from a list using remove method(specifying index)
+name = ["Ram", "Sita", "Hari", "Kevin", "Drogy", "Brogy", "Rayne"]
+name.pop(1)
+name.pop()
+print(name)
+
+##Removing items from a list using remove method(without specifying index)
+person = ["Ram", "Sita", "Hari", "Kevin", "Drogy", "Brogy", "Rayne"]
+person.pop()
+print(person)
+
+#Removing list completely
+#primenumber = [1,3,5,7,13]
+#del primenumber
+#print(primenumber) #this will cause an error because we have successfully deleted the list.
+
+#Using clear method to remove list items
+texts = ["abc","bcd","def"]
+texts.clear()
+print(texts)

@@ -11,4 +11,3 @@ numlist = [1,2,3,4]
 randomlist = [ "xyz", True, 22.5, 40 ]
 print(numlist)
 print(randomlist)
-
