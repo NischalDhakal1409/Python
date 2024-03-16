@@ -277,6 +277,27 @@ alphabet = ["A", "D", "E"]
 alphabet[1] = "W"
 print(alphabet)
 ```
+### Changing range of list items
+In python, we can also change the range of list items
+```
+num = [1,2,4,6,7]
+num[0:3] = [9,0,10]
+print(num)
+```
+### Inserting items in list
+We can insert an item in a list by using insert() method.
+```
+country = ["Nep","Ind","Pak"]
+country.insert(2,"US")
+print(country)
+```
+### Appending an item in list
+We can add the items at the end of the list by using the append() method.
+```
+position = ["First","Second","Third"]
+position.append("Last")
+print(position)
+```
 ## Tuples in Python
 ## Set in Python
 ## Dictionaries in Python
