@@ -64,7 +64,7 @@ print(person)
 #del primenumber
 #print(primenumber) #this will cause an error because we have successfully deleted the list.
 
-#Using clear method to remove list items
+#Using clear method to remove list items.
 texts = ["abc","bcd","def"]
 texts.clear()
 print(texts)
