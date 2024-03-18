@@ -277,7 +277,6 @@ alphabet = ["A", "D", "E"]
 alphabet[1] = "W"
 print(alphabet)
 ```
-### Changing range of list items
 In python, we can also change the range of list items
 ```
 num = [1,2,4,6,7]
@@ -291,7 +290,6 @@ country = ["Nep","Ind","Pak"]
 country.insert(2,"US")
 print(country)
 ```
-### Appending an item in list
 We can add the items at the end of the list by using the append() method.
 ```
 position = ["First","Second","Third"]
