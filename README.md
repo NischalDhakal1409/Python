@@ -335,7 +335,24 @@ texts = ["abc","bcd","def"]
 texts.clear()
 print(texts)
 ```
-## Tuples in Python
+### Sorting items of a list
+We can sort the items of a list in alphabetical or numerical order.
+```
+songs = ["Nep","Eng","Korean","Chinese"]
+songs.sort()
+print(songs)
+
+num = ["1", "3","10","18"]
+num.sort()
+print(num)
+```
+In addition to this, we can sort in descending order by using keyword argument 'reverse = True'
+```
+num = ["1", "3","10","18"]
+num.sort(reverse=True)
+print(num)
+```
+
 ## Set in Python
 ## Dictionaries in Python
 ## If-else
