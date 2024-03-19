@@ -68,3 +68,18 @@ print(person)
 texts = ["abc","bcd","def"]
 texts.clear()
 print(texts)
+
+#Sorting list in alphabetical order
+songs = ["Nep","Eng","Korean","Chinese"]
+songs.sort()
+print(songs)
+
+#Sorting list in numerical order
+num = ["1", "3","10","18"]
+num.sort()
+print(num)
+
+#Sorting list in descending order
+num = ["1", "3","10","18"]
+num.sort(reverse=True)
+print(num)
