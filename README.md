@@ -352,7 +352,20 @@ num = ["1", "3","10","18"]
 num.sort(reverse=True)
 print(num)
 ```
-
+## Tuples in Python
+Tuples are the data types that allows us to store multiple items in a single variable. Lists are created using round brackets i.e ().
+```
+names = ("XYZ", "ZYX", "YZX")
+print(names)
+```
+### Features of Tuples
+1. Tuples are ordered. It means that items in a tuples have a definite order. 
+2. Tuples are unchangeable. It means that the items in a tuples cannot be removed,changed or added after being created.
+3. Tuples allows duplicate. Since, tuples are indexed, so tuples can have items with the same value. For example:
+```
+lang = (["Eng", "French", "Japanese", "Eng", "French")
+print(lang)
+```
 ## Set in Python
 ## Dictionaries in Python
 ## If-else
