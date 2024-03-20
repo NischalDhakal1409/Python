@@ -363,7 +363,7 @@ print(names)
 2. Tuples are unchangeable. It means that the items in a tuples cannot be removed,changed or added after being created.
 3. Tuples allows duplicate. Since, tuples are indexed, so tuples can have items with the same value. For example:
 ```
-lang = (["Eng", "French", "Japanese", "Eng", "French")
+lang = ("Eng", "French", "Japanese", "Eng", "French")
 print(lang)
 ```
 ## Set in Python
