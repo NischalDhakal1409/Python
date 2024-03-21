@@ -368,7 +368,7 @@ print(lang)
 ```
 ## Set in Python
 ## Dictionaries in Python
-## If-else
+## If-else statement in Python
 ```
 if b > a:
    print("b is greater than a")
