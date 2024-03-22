@@ -366,6 +366,31 @@ print(names)
 lang = ("Eng", "French", "Japanese", "Eng", "French")
 print(lang)
 ```
+4. Tuples items can be of any data types. They can be of same data types or different data types.
+```
+numlist = (1,2,3,4)
+randomlist = ("xyz", True, 22.5, 40)
+print(numlist)
+print(randomlist)
+```
+### Managing Tuples item
+In a tuples, we can access, update and unpack items in a tuples.
+### Accessing Tuples item
+We can access the items in a tuples by refering to the index number.
+```
+num = (1,2,5,9)
+print(num[1])
+```
+We can also index by using negative index. The last item has index -1 and second item has index -2.
+```
+num = (12,346,82,1)
+print(num[-1])
+```
+We can also access the range of items in tuples by stating the start and end index.
+```
+alphabet = ("a","ed","as","qo")
+print(alphabet[0:2])
+```
 ## Set in Python
 ## Dictionaries in Python
 ## If-else statement in Python
