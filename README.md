@@ -154,7 +154,7 @@ Python has a set of built in methods that we can use on strings.
 | ------------- | ------------- |
 | len() | find the length of string |
 | find() | find the specified alphabet in the string |
-| capitalize()  | converts the first charatcer to capital |
+| capitalize() | converts the first charatcer to capital |
 | upper() | converts the string into uppercase |
 | lower() | converts the string into lowecase |
 | isalpha() | returns True if all characters in the string are in the alphabet |
