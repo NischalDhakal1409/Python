@@ -31,6 +31,20 @@ fruits = tuple(y)
 print(fruits)
 
 #Deleting tuples completely
-random = (1,2,3,4,67,89,1)
-del random
-print(random)               # This will cause an error as the tuple have been deleted completely.
+#random = (1,2,3,4,67,89,1)
+#del random
+#print(random)               # This will cause an error as the tuple have been deleted completely.
+
+#Unpacking tuple
+City = ("New York","Tokyo","London")
+(US, Japan, UK) = City
+print(US)
+print(Japan)
+print(UK)
+
+#Use of asterik
+Country =("Nepal","USA","UK","France","Germany")
+(Asia, America, *Europe) = Country
+print(Asia)
+print(America)
+print(Europe)
