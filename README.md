@@ -391,6 +391,43 @@ We can also access the range of items in tuples by stating the start and end ind
 alphabet = ("a","ed","as","qo")
 print(alphabet[0:2])
 ```
+### Adding items in a tuples.
+Tuples are unchangeable, that means that we cannot add or remove or modify the items of tuples. But there are some workaround by the means of which we can add items in a tuples
+### Converting tuples in a list
+In order to add items in a tuples, we can convert tuples into a list, add a item and change the list back into tuple.
+```
+fruits = ("Apple","Banana","Mango")
+y = list(fruits)
+y.append("Pineapple")
+fruits = tuple(y)
+print(fruits)
+```
+### Adding tuples to a tuples
+We can combine the items of one tuple to the other tuples if we like to add an item.
+```
+random = (1,2,3,4,67,89,1)
+add = (12,)
+random += add
+print(random)
+```
+### Removing items in a tuples
+Since tuples are unchangeable, we cannot remove items from tuples. However there are some workarounds that helps to remove the items from tuples.
+### Converting tuples to a list
+It is same like that of adding items in a tuples by conversion. In this, we convert tuple in a list and then remove the item from list and again convert back to a tuple.
+```
+fruits = ("Apple","Banana","Mango")
+y = list(fruits)
+y.remove("Apple")
+fruits = tuple(y)
+print(fruits)
+```
+### Deleting tuple completely
+We can delete the tuple completely by using the del keyword.
+```
+random = (1,2,3,4,67,89,1)
+del random
+print(random)  
+```
 ## Set in Python
 ## Dictionaries in Python
 ## If-else statement in Python
