@@ -497,8 +497,19 @@ print(math.ceil(pi))
 print(math.floor(pi))
 print(math.sqrt(5))
 ```
-
-
+## User input in Python
+Python allows us to take input from the user by input() method.
+```
+name = input("Enter your name: ")
+print("Your name is "+name+".")
+```
+However, the input taken by input() method is always string. If we want to take the integer or float value as input, we must convert it into the respective one while taking the input.
+```
+age = int(input("Enter your age: "))
+height = float(input("Enter your height: "))
+print("You are "+str(age)+" years old.")
+print("Your height is "+str(height)+" ft.")
+```
 
 
 
