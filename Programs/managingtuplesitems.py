@@ -22,3 +22,15 @@ random = (1,2,3,4,67,89,1)
 add = (12,)
 random += add
 print(random)
+
+#Removing items from a tuple
+fruits = ("Apple","Banana","Mango")
+y = list(fruits)
+y.remove("Apple")
+fruits = tuple(y)
+print(fruits)
+
+#Deleting tuples completely
+random = (1,2,3,4,67,89,1)
+del random
+print(random)               # This will cause an error as the tuple have been deleted completely.
