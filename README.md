@@ -1,5 +1,5 @@
 # Python Learning
-I will be learning python programming from the basics and will be uploading everything that I have learned in this repository.
+I will be learning and posting about python programming from the basics and will be uploading everything that I have learned in this repository.
 # Resources
 I am learning python currently following the tutorial from youtube alongside W3schools. Beside that, any further resources that I will follow up in the future, I will upload over here.
 
