@@ -456,6 +456,46 @@ num = {1,2,3,4}
 print(num)
 ```
 ### Managing Set items
+We can add items in sets, join sets and also items from the sets.
+### Adding items in set
+Once the set is created, we cannot change it's item. However we can add new items in a set by using add() method.
+```
+num = {1,2,3,5,67,89,0}
+num.add(22)
+print(num)
+```
+### Adding items to a set
+We can also add item to a existing set from another set by using update() method.
+```
+country ={"Nepal","USA","UK"}
+city = {"Kathmandu", "San Franscisco", "London"}
+country.update(city)
+print(country)
+```
+The object in the update() doesn't have to be a set. It can be tuples, dict, list,etc.
+```
+country ={"USA","UK"}
+city = [ "San Franscisco", "London"]
+country.update(city)
+print(country)
+```
+### Removing items from a set
+We can remove items from a set by two methods. They are remove() and discard()
+```
+name = {"Kevin", "David", "Rayne", "Lucifer"}
+name.remove("Kevin")
+name.discard("David")
+print(name)
+```
+The only difference between two methods is that, if there is no object in the items, remove calls out error while discard doesn't.
+### Clearing set
+We can clear the items of a set and make it null by the use of clear() method.
+```
+alphabet = {"a","m","s"}
+alphabet.clear()
+print(alphabet)
+```
+### Managing Set items
 ## Dictionaries in Python
 ## If-else statement in Python
 ```
