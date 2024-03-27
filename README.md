@@ -1,5 +1,5 @@
 # Python Learning
-I will be learning python programming from the basics and will be uploading everything that I have learned in this repository.
+I will be learning and posting about python programming from the basics and will be uploading everything that I have learned in this repository.
 # Resources
 I am learning python currently following the tutorial from youtube alongside W3schools. Beside that, any further resources that I will follow up in the future, I will upload over here.
 
@@ -10,7 +10,6 @@ I am learning python currently following the tutorial from youtube alongside W3s
 Python is a popular high level programming language. It is used in different fields like web development, data science, software development and system scripting. It is also used to connect with the database system and read and modify the files. It is popular because of it's simple syntax. In addition to this, it works on different platforms like Windows, Mac, Linux, etc. Also, it can be treated in procedural way or object oriented way or functional way.
 
 Below is the simple example of python programming.
-
 ```
 print ("Hello World!")
 ```
@@ -353,7 +352,7 @@ num.sort(reverse=True)
 print(num)
 ```
 ## Tuples in Python
-Tuples are the data types that allows us to store multiple items in a single variable. Lists are created using round brackets i.e ().
+Tuples are the data types that allows us to store multiple items in a single variable. Tuples are created using round brackets i.e ().
 ```
 names = ("XYZ", "ZYX", "YZX")
 print(names)
@@ -428,7 +427,35 @@ random = (1,2,3,4,67,89,1)
 del random
 print(random)  
 ```
+### Unpacking tuples
+When we create a tuples, the values are usually assigned and this is called packing a tuple. In python, we can extract the items of tuples back into variable which is called unpacking tuple.
+```
+City = ("New York","Tokyo","London")
+(US, Japan, UK) = City
+print(US)
+print(Japan)
+print(UK)
+```
+However if the variable is less than the number of values in tuples, we can add an * to the variable name and the values will be assigned to the variable as a list.
+```
+Country =("Nepal","USA","UK","France","Germany")
+(Asia, America, *Europe) = Country
+print(Asia)
+print(America)
+print(Europe)
+```
 ## Set in Python
+Set are the data types that allows us to store multiple items in a single variable. Set are written in curly brackets.
+### Features of Set
+1. Set are unordered. It means set items can appear in a different order every time you use them, and cannot be referred to by index or key.
+2. Set are unchangeable. It means that we cannot change the items of a set after we have created the set.
+3. Set doesn't allow duplicate. Since, Set are unordered, so duplicates is not possible in set.
+### Example of Set
+```
+num = {1,2,3,4}
+print(num)
+```
+### Managing Set items
 ## Dictionaries in Python
 ## If-else statement in Python
 ```
