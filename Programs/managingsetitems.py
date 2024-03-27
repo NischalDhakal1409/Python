@@ -22,3 +22,6 @@ name.discard("David")
 print(name)
 
 #Clearing items of a set
+alphabet = {"a","m","s"}
+alphabet.clear()
+print(alphabet)
