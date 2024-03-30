@@ -1,2 +1,4 @@
 #Basic example of for loop
-i
+names = ["Peter", "Devin"]
+for letter in names:
+    print(names)
