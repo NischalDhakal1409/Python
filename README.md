@@ -577,12 +577,7 @@ height = float(input("Enter your height: "))
 print("You are "+str(age)+" years old.")
 print("Your height is "+str(height)+" ft.")
 ```
-
-
-
-
-
-
+## OOP in Python
 
 
 
