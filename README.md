@@ -10,25 +10,25 @@ I am learning python currently following the tutorial from youtube alongside W3s
 Python is a popular high level programming language. It is used in different fields like web development, data science, software development and system scripting. It is also used to connect with the database system and read and modify the files. It is popular because of it's simple syntax. In addition to this, it works on different platforms like Windows, Mac, Linux, etc. Also, it can be treated in procedural way or object oriented way or functional way.
 
 Below is the simple example of python programming.
-```
+```python
 print ("Hello World!")
 ```
 ## Comments in Python
 Comments is used to explain what the code is about. It makes the code more readable. It can be done by using #.
-```
+```python
 #This is comment
 print("Checking Comment")
 ```
 ## Variables in Python
 Variables are the containers that hold a value or data. It is essential for storing and manipulating data in programming. In python, a variable is created the moment you first assign a value to it.
-```
+```python
 a = "Smith"
 b = 20
 print(a)
 print(b)
 ```
 We can assign multiple variables in a single line of code thus reducing the code length and making it efficient.
-```
+```python
 name, age, height = "Kevin", 21, 5
 print(name)
 print(age)
