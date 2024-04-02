@@ -521,7 +521,8 @@ else:
 ```
 ## While loop
 ## For Loop
-
+## Arrays in Python
+Python doesn't have in-built feature for the arrays. However lists are used as arrays in python. For reference you can view ## List
 ## Math in Python
 In Python, we have built-in math functions, including math module that allows us to perform mathematical tasks on numbers. 
 
