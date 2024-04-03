@@ -492,7 +492,12 @@ alphabet = {"a","m","s"}
 alphabet.clear()
 print(alphabet)
 ```
+
 ## Dictionaries in Python
+### Features of Dictionaries
+1. Dictionaries are ordered. It means that items in a dictionaries have a definite order. 
+2. Dictionaries are changeable. It means that the items in a dictionaries can be removed after being created. Also the new item can be added.
+3. Dictionaries doesn't allows duplicate.
 ## If-else statement in Python
 ```python
 if b > a:
