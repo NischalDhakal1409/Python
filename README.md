@@ -39,7 +39,7 @@ Variables are of two type based on the place where they are defined. They are
 ### 1. Global Variable
    
 Variables that are created outside of a function (as in all of the examples above) are known as global variables. Global variables can be used by everyone, both inside of functions and outside.
-```
+```python
 x = "programming language."
 
 def myfunc():
@@ -48,7 +48,7 @@ def myfunc():
 myfunc()
 ```
 Global variable can also be created inside a function by using global keyword.
-```
+```python
 def myfunc():
   global x
   x = "high level programming language"
@@ -59,17 +59,15 @@ print("Python is " + x)
 ### 2. Local Variable
    
 Local variables in Python are those which are initialized inside a function and belong only to that particular function. It cannot be accessed anywhere outside the function.
-```
+```python
 def f():
     s = "I love python"
     print(s)
-
 f()
 ```
 ## Data Types in Python
-
-Python has different data types built-in by default in these categories
-| Types        | Categories |
+Python has different data types built-in by default in these categories.
+| Types | Categories |
 | ------------- | ------------- |
 | Text | str |
 | Numeric | int, float, complex |
@@ -83,18 +81,18 @@ Python has different data types built-in by default in these categories
 ## Strings
 Strings in python are surrounded by either single quotation marks or double quotation marks.
 "Hello" is same as 'hello'
-```
+```python
 print("Hello World!")
 ```
 ### Assigning String to the variable
 We can also assign string to the variable. It is done done with the variable name followed by an equal sign and the string.
-```
+```python
 name = "Smith"
 print(name)
 ```
 ### Multiline Strings
 We can assign multiline strings by using 3 quotes.
-```
+```python
 random = """Lorem ipsum dolor sit amet,
         consectetur adipiscing elit,
         sed do eiusmod tempor incididunt
@@ -106,7 +104,7 @@ String Slicing is the method of creating a substring by extracting elements from
 ### Use of index[]
 We can create a substring by extracting the elements from other string using index[]. We need to specify the start index and end index, separated by a colon, to return a part of the string. We can also specify steps to skip and extract substring following that steps.
 The general format for indexing is [start:end:step]
-```
+```python
 name = "John Smith"
 first_name = name[0:5]                  
 last_name = name[5:11]                  
@@ -117,7 +115,7 @@ print(random_name)
 ```
 ### Use of slice()
 We can return a range of characters by using the slice syntax.We need to the start index and the end index, separated by a colon, to return a part of the string.
-```
+```python
 website = "https://www.google.com"
 slice = slice(12,-4)
 print(website[slice])
@@ -125,11 +123,11 @@ print(website[slice])
 ### Escape Characters
 Escape character is the backslash followed by the character that causes escape from the normal interpretation of a string. There are different escape characters used in Python. Some of them are given below.
 For example:
-```
+```python
 print("He is so called "rich" son of a college")
 ```
 If we run the above code in python, python returns error as we have used multiple quotes inside a string. To fix this problem, we can use escape character.
-```
+```python
 print(" He is so called \"rich\" son of a college")
 ```
 | Code | Result |
@@ -140,7 +138,7 @@ print(" He is so called \"rich\" son of a college")
 | \t | tab |
 
 ### Use of escape characters
-```
+```python
 print("He is \'special\'")
 print("He\\she ")
 print("Rayne\t is a student")
@@ -162,7 +160,7 @@ Python has a set of built in methods that we can use on strings.
 | replace() | replaces the target alphabet with the another alphabet in the string |
 
 Below is the example demonstrating the use of all above string methods.
-```
+```python
 name = "Smith"
 
 print(len(name))
@@ -180,9 +178,8 @@ print(name.replace("i","z"))
 ### Types of Numeric Data Types
 In Python, Basically we have 3 different types of numeric data types. They are:
  ### 1. Integer
-
 Integer are the whole number, negative or positive without a decimal. To assign a variable with integer, we can write a variable name followed by equals to sign and integer.
-```
+```python
 a = 21
 b = -10
 print(a)
@@ -190,7 +187,7 @@ print(b)
 ```
   ### 2. Float
 Float, "Floating Point Number" is a number, positive or negative, containing one or more decimals. To assign a variable with float, we can write a variable name followed by equals to sign and float. 
-```
+```python
 x = 55.6
 y = -20.3
 print(x)
@@ -198,7 +195,7 @@ print(y)
 ```
 ### 3. Complex
 Complex numbers are written with a "j" as the imaginary part.
-```
+```python
 c = 5j
 d = 3+2j
 print(c)
@@ -207,25 +204,25 @@ print(d)
 ## Boolean in Python 
 Boolean represents one of the two values i.e True or False
 While programming , there may arise a situation where we have to know if expression is true or false. When we compare two values, python evaluates and sends the boolean value.
-```
+```python
 print(10>2)
 ```
 In the above code, python analyze the expression and returns the true value.
 ### bool() function
 The bool() function allows you to evaluate any value, and give you True or False in return.
 Generally, any value is True if it is not empty strings, 0 or empty sets,tuples or dictionary.
-```
+```python
 x = "Hi"
 print(bool(x))
 ```
 However, if the values evaluates to empty values, such as (), [], {}, "", the number 0, and the value None, then the python returns False.
-```
+```python
 y = 0
 print(bool(y))
 ```
 ## Lists in Python
 List are the data types that allows us to store multiple items in a single variable. Lists are created using  big brackets i.e [] .
-```
+```python
 name = ["Kevin", "Smith", "Shawn"]
 print(name)
 ```
@@ -233,12 +230,12 @@ print(name)
 1. List are ordered. It means that items in a list have a definite order. Whenever a new item is added to the list, it is added at last.
 2. Lists are changeable. It means that the items in a list can be removed after being created. Also the new item can be added.
 3. Lists allows duplicate. Since, lists are indexed, so lists can have items with the same value. For example:
-```
+```python
 lang = ["Eng", "French", "Japanese", "Eng", "French"]
 print(lang)
 ```
 4. Lists items can be of any data types. They can be of same data types or different data types.
-```
+```python
 numlist = [1,2,3,4]
 randomlist = [ "xyz", True, 22.5, 40 ]
 print(numlist)
@@ -248,56 +245,56 @@ print(randomlist)
 The items in a list can be managed in different styles. We can access the list items, add or remove or change the list items.
 ### Accessing List items
 Since lists are indexed, we can access them by referring to index number. The first item has index 0.
-```
+```python
 lang = ["Python","C","Java"]
 print(lang[1])
 ```
 We can also index by using negative index. The last item has index -1 and second item has index -2.
-```
+```python
 num = [1,3,5,2,3]
 print(num[-2])
 ```
 We can also specify range of index to say where to start and where to end. However, the start index is included but end index is not inclued.
-```
+```python
 random = ["a","c","q","r","i","p","g"]
 print(random[2:5])
 ```
 ### Checking list items
 We can also check if specified item is present in list or not by using 'in' keyword.
-```
+```python
 fruits = ["mango", "apple", "grapes"]
 if "apple" in fruits:
   print("Yes, 'apple' is in the fruits list")
 ```
 ### Changing list items
 We can also change the list items by refering to the index number.
-```
+```python
 alphabet = ["A", "D", "E"]
 alphabet[1] = "W"
 print(alphabet)
 ```
 In python, we can also change the range of list items
-```
+```python
 num = [1,2,4,6,7]
 num[0:3] = [9,0,10]
 print(num)
 ```
 ### Inserting items in list
 We can insert an item in a list by using insert() method.
-```
+```python
 country = ["Nep","Ind","Pak"]
 country.insert(2,"US")
 print(country)
 ```
 We can add the items at the end of the list by using the append() method.
-```
+```python
 position = ["First","Second","Third"]
 position.append("Last")
 print(position)
 ```
 ### Extending list
 We can also add elements from another list to the current list by using extend() method.
-```
+```python
 programs = ["Word", "Excel", "Powerpoint"]
 software = ["Office", "VS-Code"]
 programs.extend(software)
@@ -305,38 +302,38 @@ print(programs)
 ```
 ### Removing items from a list
 We can also remove the items from a list by using remove() method.
-```
+```python
 names = ["Ram", "Sita", "Hari", "Kevin", "Drogy", "Brogy", "Rayne"]
 names.remove("Ram")
 print(names)
 ```
 In order to remove the specified index from a list, we can use pop() method.
-```
+```python
 name = ["Ram", "Sita", "Hari", "Kevin", "Drogy", "Brogy", "Rayne"]
 name.pop(1)
 print(name)
 ```
 If the index is not specified then the last index of the list is removed by pop() method.
-```
+```python
 person = ["Ram", "Sita", "Hari", "Kevin", "Drogy", "Brogy", "Rayne"]
 person.pop()
 print(person)
 ```
 If we want to remove the list completely, we can use del to remove completely.
-```
+```python
 primenumber = [1,3,5,7,13]
 del primenumber
 print(primenumber) #this will cause an error because we have successfully deleted the list.
 ```
 We can also remove the items of a list by using clear() method. The list will still remain but the content will be empty.
-```
+```python
 texts = ["abc","bcd","def"]
 texts.clear()
 print(texts)
 ```
 ### Sorting items of a list
 We can sort the items of a list in alphabetical or numerical order.
-```
+```python
 songs = ["Nep","Eng","Korean","Chinese"]
 songs.sort()
 print(songs)
@@ -346,14 +343,14 @@ num.sort()
 print(num)
 ```
 In addition to this, we can sort in descending order by using keyword argument 'reverse = True'
-```
+```python
 num = ["1", "3","10","18"]
 num.sort(reverse=True)
 print(num)
 ```
 ## Tuples in Python
 Tuples are the data types that allows us to store multiple items in a single variable. Tuples are created using round brackets i.e ().
-```
+```python
 names = ("XYZ", "ZYX", "YZX")
 print(names)
 ```
@@ -361,12 +358,12 @@ print(names)
 1. Tuples are ordered. It means that items in a tuples have a definite order. 
 2. Tuples are unchangeable. It means that the items in a tuples cannot be removed,changed or added after being created.
 3. Tuples allows duplicate. Since, tuples are indexed, so tuples can have items with the same value. For example:
-```
+```python
 lang = ("Eng", "French", "Japanese", "Eng", "French")
 print(lang)
 ```
 4. Tuples items can be of any data types. They can be of same data types or different data types.
-```
+```python
 numlist = (1,2,3,4)
 randomlist = ("xyz", True, 22.5, 40)
 print(numlist)
@@ -376,17 +373,17 @@ print(randomlist)
 In a tuples, we can access, update and unpack items in a tuples.
 ### Accessing Tuples item
 We can access the items in a tuples by refering to the index number.
-```
+```python
 num = (1,2,5,9)
 print(num[1])
 ```
 We can also index by using negative index. The last item has index -1 and second item has index -2.
-```
+```python
 num = (12,346,82,1)
 print(num[-1])
 ```
 We can also access the range of items in tuples by stating the start and end index.
-```
+```python
 alphabet = ("a","ed","as","qo")
 print(alphabet[0:2])
 ```
@@ -394,7 +391,7 @@ print(alphabet[0:2])
 Tuples are unchangeable, that means that we cannot add or remove or modify the items of tuples. But there are some workaround by the means of which we can add items in a tuples
 ### Converting tuples in a list
 In order to add items in a tuples, we can convert tuples into a list, add a item and change the list back into tuple.
-```
+```python
 fruits = ("Apple","Banana","Mango")
 y = list(fruits)
 y.append("Pineapple")
@@ -403,7 +400,7 @@ print(fruits)
 ```
 ### Adding tuples to a tuples
 We can combine the items of one tuple to the other tuples if we like to add an item.
-```
+```python
 random = (1,2,3,4,67,89,1)
 add = (12,)
 random += add
@@ -413,7 +410,7 @@ print(random)
 Since tuples are unchangeable, we cannot remove items from tuples. However there are some workarounds that helps to remove the items from tuples.
 ### Converting tuples to a list
 It is same like that of adding items in a tuples by conversion. In this, we convert tuple in a list and then remove the item from list and again convert back to a tuple.
-```
+```python
 fruits = ("Apple","Banana","Mango")
 y = list(fruits)
 y.remove("Apple")
@@ -422,14 +419,14 @@ print(fruits)
 ```
 ### Deleting tuple completely
 We can delete the tuple completely by using the del keyword.
-```
+```python
 random = (1,2,3,4,67,89,1)
 del random
 print(random)  
 ```
 ### Unpacking tuples
 When we create a tuples, the values are usually assigned and this is called packing a tuple. In python, we can extract the items of tuples back into variable which is called unpacking tuple.
-```
+```python
 City = ("New York","Tokyo","London")
 (US, Japan, UK) = City
 print(US)
@@ -437,7 +434,7 @@ print(Japan)
 print(UK)
 ```
 However if the variable is less than the number of values in tuples, we can add an * to the variable name and the values will be assigned to the variable as a list.
-```
+```python
 Country =("Nepal","USA","UK","France","Germany")
 (Asia, America, *Europe) = Country
 print(Asia)
@@ -451,7 +448,7 @@ Set are the data types that allows us to store multiple items in a single variab
 2. Set are unchangeable. It means that we cannot change the items of a set after we have created the set.
 3. Set doesn't allow duplicate. Since, Set are unordered, so duplicates is not possible in set.
 ### Example of Set
-```
+```python
 num = {1,2,3,4}
 print(num)
 ```
@@ -459,21 +456,21 @@ print(num)
 We can add items in sets, join sets and also items from the sets.
 ### Adding items in set
 Once the set is created, we cannot change it's item. However we can add new items in a set by using add() method.
-```
+```python
 num = {1,2,3,5,67,89,0}
 num.add(22)
 print(num)
 ```
 ### Adding items to a set
 We can also add item to a existing set from another set by using update() method.
-```
+```python
 country ={"Nepal","USA","UK"}
 city = {"Kathmandu", "San Franscisco", "London"}
 country.update(city)
 print(country)
 ```
 The object in the update() doesn't have to be a set. It can be tuples, dict, list,etc.
-```
+```python
 country ={"USA","UK"}
 city = [ "San Franscisco", "London"]
 country.update(city)
@@ -481,7 +478,7 @@ print(country)
 ```
 ### Removing items from a set
 We can remove items from a set by two methods. They are remove() and discard()
-```
+```python
 name = {"Kevin", "David", "Rayne", "Lucifer"}
 name.remove("Kevin")
 name.discard("David")
@@ -490,25 +487,24 @@ print(name)
 The only difference between two methods is that, if there is no object in the items, remove calls out error while discard doesn't.
 ### Clearing set
 We can clear the items of a set and make it null by the use of clear() method.
-```
+```python
 alphabet = {"a","m","s"}
 alphabet.clear()
 print(alphabet)
 ```
-### Managing Set items
 ## Dictionaries in Python
 ## If-else statement in Python
-```
+```python
 if b > a:
    print("b is greater than a")
 ```
-```
+```python
 if b > a:
    print("b is greater than a")
 elif b == a:
    print("They both are equal")
 ```
-```
+```python
 a=200
 b=20
 
@@ -534,7 +530,7 @@ There are different built-in math functions to perform mathematical operations.
 | pow(x,y) | returns the value of x to the power of y (xy) |
 | max() | used to find the highest value in an iterable |
 | min() | used to find the lowest value in an iterable |
-```
+```python
 a=3
 b=4
 c=1
@@ -547,7 +543,7 @@ print(min(a,b,c))
 ### Built-in Math Module
 Python has also a built-in module called math, which extends the list of mathematical functions.
 To use it, you must import the math module:
-```
+```python
 import math
 ```
 After importing math module, we can use different methods to perform mathematical calculations in python.
@@ -558,7 +554,7 @@ After importing math module, we can use different methods to perform mathematica
 | ceil() | rounds a number upwards to its nearest integer |
 | floor() | rounds a number downwards to its nearest integer |
 
-```
+```python
 import math
 pi = 3.14
 print(math.ceil(pi))
@@ -567,12 +563,12 @@ print(math.sqrt(5))
 ```
 ## User input in Python
 Python allows us to take input from the user by input() method.
-```
+```python
 name = input("Enter your name: ")
 print("Your name is "+name+".")
 ```
 However, the input taken by input() method is always string. If we want to take the integer or float value as input, we must convert it into the respective one while taking the input.
-```
+```python
 age = int(input("Enter your age: "))
 height = float(input("Enter your height: "))
 print("You are "+str(age)+" years old.")
