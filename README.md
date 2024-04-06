@@ -7,7 +7,7 @@ I am learning python currently following the tutorial from youtube alongside W3s
 <a href = "https://www.w3schools.com/python/default.asp"> W3schools</a>
 # Chapters
 ## Introduction to Python 
-Python is  popular high level programming language. It is used in different fields like web development, data science, software development and system scripting. It is also used to connect with the database system and read and modify the files. It is popular because of it's simple syntax. In addition to this, it works on different platforms like Windows, Mac, Linux, etc. Also, it can be treated in procedural way or object oriented way or functional way.
+Python is a popular high level programming language. It is used in different fields like web development, data science, software development and system scripting. It is also used to connect with the database system and read and modify the files. It is popular because of it's simple syntax. In addition to this, it works on different platforms like Windows, Mac, Linux, etc. Also, it can be treated in procedural way or object oriented way or functional way.
 
 Below is the simple example of python programming.
 ```python
